@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Main Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.no-border-height40{
+    border: none;
+    height: 40px;
+}
+
+/* Background */
+body{
+    background: url("../img/background.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #2e3339;
+}
+
+/* To Do List */
+.container{
+    background-color: #616a71;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 350px auto 0;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Insert task */
+.input-task{
+    border-radius: 10px;
+    width: 300px;
+    padding-left: 10px;
+}
+
+/* Insert task Button */
+.button-add-task{
+    border-radius: 5px;
+    background-color: #2e3339;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+}
+
+.button-add-task:hover{
+    background-color: #616a71;
+    transition: all 0.3s;
+}
+
+.button-add-task:active{
+    background-color: #5d656d;
+}
+
+/* Lista de Tarefas */
+.list-tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.task{
+    background-color: #dadfe3;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.task:hover img{
+    opacity: 1;
+}
+
+/* Done Tasks */
+.done{
+    opacity: 0.1;
+    text-decoration: line-through;
+    list-style: none;
+}
